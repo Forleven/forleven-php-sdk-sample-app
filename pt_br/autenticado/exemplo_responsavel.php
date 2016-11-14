@@ -4,7 +4,7 @@ include 'token.php';
 
 use Forleven\Member\MemberGuardian;
 
-$id = 42; // here id user/member
+$id = 42; // id user/member aqui
 $guardians = new MemberGuardian();
 $guardians = $guardians->getGuardians($id);
 

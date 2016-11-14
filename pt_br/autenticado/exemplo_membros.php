@@ -6,7 +6,7 @@ use Forleven\Member\Member;
 
 $membros = new Member();
 
-$membros->pagination->next(); // or $membros->pagination->numPage = 2;
+$membros->pagination->next(); // OU $membros->pagination->numPage = 2;
 
 $n = $membros->pagination->numPage * $membros->pagination->perPage;
 
@@ -17,7 +17,7 @@ foreach ($rowMembros as $membro)
 	echo $n . '. ' . $membro['name'] . ' ' . $membro['lastname'] . '<br/>';
 }
 
-// $id = ID MEMBER HERE;
+// $id = ID MEMBER AQUI;
 
 if(!empty($id))
 {
